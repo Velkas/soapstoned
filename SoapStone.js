@@ -3,5 +3,5 @@ fetch("./messages.json")
   .then((data) => {
     const messageFactory = new MessageFactory(data);
 
-    document.querySelector("html").innerHTML = `${messageFactory.message()}`;
+    document.write(`${messageFactory.message()}`);
   });
